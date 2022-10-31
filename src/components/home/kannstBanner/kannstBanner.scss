@@ -1,0 +1,79 @@
+@import '../../../styles/mixins/global.scss';
+
+.kannst-banner-alignment {
+    background-image: url("../../../assets/images/new-banner.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center center;
+    padding: 240px 0 111px 0;
+
+    @include breakpoint("max-md") {
+        padding: 118px 0 61px 0;
+    }
+
+    @include breakpoint("max-sm") {
+        background-image: url("../../../assets/images/m-new.png");
+
+        padding: 219px 0 50px 0;
+    }
+
+    h5 {
+        font-family: "Branding-bold";
+        color: #fff;
+        font-weight: 700;
+        margin: 0 0 32px 0;
+        font-size: 64px;
+        line-height: 73px;
+        text-align: center;
+
+        @include breakpoint("max-md") {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 37px;
+        }
+
+        @include breakpoint("max-sm") {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 23px;
+        }
+    }
+
+    .button-center-alignment {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+            background-color: #fff;
+            padding: 16px 29px;
+            background: #FFFFFF;
+            border: 1px solid #FFFFFF;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            color: #9DBC78;
+
+            @include breakpoint("max-md") {
+                font-weight: 600;
+                font-size: 11px;
+                line-height: 13px;
+            }
+
+            @include breakpoint("max-sm") {
+                padding: 18px 23px;
+            }
+
+            span {
+                padding-left: 5px;
+            }
+
+        }
+    }
+
+}

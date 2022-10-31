@@ -1,0 +1,208 @@
+@import '../../../styles/mixins/global.scss';
+
+.footer-banner {
+    background: radial-gradient(50% 50% at 50% 50%, #9DBC78 0%, #95AE6C 100%);
+    position: relative;
+
+    .icon-right-alignment {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 180px;
+        padding-bottom: 50px;
+        cursor: pointer;
+
+        @include breakpoint("max-md") {
+            padding-right: 80px;
+            padding-bottom: 23px;
+        }
+
+        @include breakpoint("max-sm") {
+            padding-right: 18px;
+            padding-bottom: 23px;
+        }
+
+        img {
+            margin-top: -40px;
+            max-width: 268px;
+            max-height: 183px;
+
+            @include breakpoint("max-md") {
+                max-width: 117px;
+                max-height: 80px;
+                margin-top: -20px;
+            }
+        }
+    }
+
+    .contact-icon-alignment {
+        position: absolute;
+        bottom: 50px;
+        right: 200px;
+
+        @include breakpoint("max-sm") {
+            display: none;
+        }
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    .text-style {
+        padding: 0 0 186px 0;
+
+        @include breakpoint("max-md") {
+            padding: 0 0 66px 0;
+        }
+
+        .button-center-alignment {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            button {
+                border: 2px solid #FFFFFF;
+                border-radius: 5px;
+                cursor: pointer;
+                padding: 21px 62px;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 18px;
+                background-color: transparent;
+                font-family: 'Inter', sans-serif;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center;
+
+
+                @include breakpoint("max-md") {
+                    padding: 14px 33px;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 18px;
+                }
+
+                span {
+                    display: block;
+                    padding-left: 10px;
+                }
+
+            }
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 69px;
+            text-align: center;
+            font-family: "Branding-bold";
+            margin: 0 auto 30px auto;
+            color: #FFFFFF;
+
+            @include breakpoint("max-md") {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 18px;
+                max-width: 235px;
+            }
+
+            @include breakpoint("max-sm") {
+                max-width: 100%;
+            }
+
+        }
+    }
+}
+
+.sub-footer-content-alignment {
+    padding: 20px 0;
+
+    @include breakpoint("max-sm") {
+        padding: 40px 0;
+    }
+
+    .content-alignment {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include breakpoint("max-sm") {
+            display: block;
+        }
+
+        div {
+            h2 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 19px;
+                font-family: "Branding-Medium";
+                cursor: pointer;
+                color: #000000;
+
+                @include breakpoint("max-sm") {
+                    margin: 0 0 35px 0;
+                }
+            }
+        }
+
+        .menu-alignment {
+            display: flex;
+            position: relative;
+            align-items: center;
+
+            @include breakpoint("max-sm") {
+                display: block;
+            }
+
+            div+div {
+                @include breakpoint("max-sm") {
+                    position: absolute;
+
+                    bottom: -4px;
+
+                    right: 0;
+                }
+            }
+
+            img {
+                cursor: pointer;
+            }
+
+            .menyu {
+                display: flex;
+                align-items: center;
+
+                @include breakpoint("max-sm") {
+                    display: block;
+                }
+
+                a:last-child {
+                    padding-right: 82px;
+                }
+
+                a {
+                    display: block;
+                    font-family: "Branding-Medium";
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 19px;
+                    color: #000000;
+                    cursor: pointer;
+                    padding-right: 40px;
+
+                    @include breakpoint("max-sm") {
+                        padding-right: 0;
+                        padding-bottom: 35px;
+                    }
+                }
+
+                a:last-child {
+                    @include breakpoint("max-sm") {
+                        padding-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

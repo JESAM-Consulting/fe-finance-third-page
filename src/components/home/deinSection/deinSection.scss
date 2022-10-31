@@ -1,0 +1,116 @@
+@import '../../../styles/mixins/global.scss';
+
+.dein-section-content-alignment {
+    padding: 97px 0;
+
+    @include breakpoint("max-md") {
+        padding: 50px 0 100px 0;
+    }
+
+    @include breakpoint("max-sm") {
+        padding: 160px 0 53px 0;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 548px 1fr;
+        gap: 120px;
+        align-items: center;
+
+        @include breakpoint("max-md") {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        @include breakpoint("max-sm") {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 40px;
+
+        }
+
+        .grid-items {
+            .image-style {
+                img {}
+            }
+
+            h2 {
+                font-family: "Branding-bold";
+                font-weight: 700;
+                font-size: 60px;
+                line-height: 69px;
+                margin: 0 0 23px 0;
+                color: #010102;
+
+                @include breakpoint("max-md") {
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 37px;
+                }
+
+                @include breakpoint("max-sm") {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 23px;
+                }
+            }
+
+            h3 {
+                font-weight: 350;
+                font-size: 20px;
+                line-height: 26px;
+                margin: 0 0 23px 0;
+                font-family: "Branding-Light";
+                color: #9C9D9D;
+
+                @include breakpoint("max-md") {
+                    font-weight: 350;
+                    font-size: 11px;
+                    line-height: 14px;
+                }
+
+                @include breakpoint("max-sm") {
+                    font-size: 14px;
+                    line-height: 17px;
+                    max-width: 334px;
+                }
+            }
+
+            .icon-text-all-alignment {
+                .icon-text-grid:last-child {
+                    padding: 0;
+                }
+
+                .icon-text-grid {
+                    display: grid;
+                    grid-template-columns: 30px 1fr;
+                    gap: 12px;
+                    padding: 0 0 23px 0;
+
+                    @include breakpoint("max-md") {
+                        grid-template-columns: 15px 1fr;
+                    }
+
+                    img {
+                        position: relative;
+                        top: 5px;
+                    }
+
+                    span {
+                        display: block;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 27px;
+                        font-family: "Branding-bold";
+                        color: #010102;
+
+                        @include breakpoint("max-md") {
+                            font-weight: 700;
+                            font-size: 11px;
+                            line-height: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
