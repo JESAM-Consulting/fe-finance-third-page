@@ -130,7 +130,7 @@ export default function ContactModalNew(props) {
                 <p>Jetzt Kontakt aufnehmen</p>
 
                 <h6 className="m-new-s"> Sie haben es fast geschafft!</h6>
-                <h3>So können wir dich erreichen</h3>
+                <h3>So können wir Sie erreichen</h3>
                 <div class="floating-form">
                   <div class="floating-label">
                     <input
