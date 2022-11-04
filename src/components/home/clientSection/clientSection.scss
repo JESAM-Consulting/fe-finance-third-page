@@ -17,6 +17,31 @@
         opacity: 1 !important;
     }
 
+    .button-left-side-arrow-alignment-for-page {
+        position: absolute;
+        top: 122px;
+        left: 36%;
+        cursor: pointer;
+
+        @include breakpoint("max-sm") {
+            top: 67px;
+            left: 10%;
+        }
+    }
+
+    .button-right-side-arrow-alignment-for-page {
+        position: absolute;
+        top: 122px;
+        right: 36%;
+        cursor: pointer;
+
+
+        @include breakpoint("max-sm") {
+            top: 67px;
+            right: 10%;
+        }
+    }
+
 
     .text-center-alignment-all {
         h1 {

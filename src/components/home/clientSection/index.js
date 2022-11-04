@@ -9,10 +9,11 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={className}
-      style={{ ...style, display: "block", background: "red", display: "none" }}
       onClick={onClick}
-    />
+      className="button-right-side-arrow-alignment-for-page"
+    >
+      <img src={RightIcon} alt="RightIcon" />
+    </div>
   );
 }
 
@@ -20,15 +21,11 @@ function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={className}
-      style={{
-        ...style,
-        display: "block",
-        background: "green",
-        display: "none",
-      }}
       onClick={onClick}
-    />
+      className="button-left-side-arrow-alignment-for-page"
+    >
+      <img src={LeftIcon} alt="LeftIcon" />
+    </div>
   );
 }
 export default function ClientSection() {
@@ -55,7 +52,6 @@ export default function ClientSection() {
                   <button onClick={() => setModalOpen(!modalOpen)}>
                     1. Termin
                   </button>
-                  <img src={RightIcon} alt="RightIcon" />
                 </div>
                 <p>
                   Während des ersten Beratungsgesprächs geht es nur um eins:
@@ -70,11 +66,9 @@ export default function ClientSection() {
               <div className="text-center-alignment-all">
                 <h1>Lehrerberatung Step by Step</h1>
                 <div className="button-center-alignment">
-                  <img src={LeftIcon} alt="LeftIcon" />
                   <button onClick={() => setModalOpen(!modalOpen)}>
                     2. Konzept
                   </button>
-                  <img src={RightIcon} alt="RightIcon" />
                 </div>
                 <p>
                   Nach dem Gespräch erstellen wir ein maßgeschneidertes
@@ -89,12 +83,9 @@ export default function ClientSection() {
               <div className="text-center-alignment-all">
                 <h1>Lehrerberatung Step by Step</h1>
                 <div className="button-center-alignment">
-                  <img src={LeftIcon} alt="LeftIcon" />
-
                   <button onClick={() => setModalOpen(!modalOpen)}>
                     3. Beratung
                   </button>
-                  <img src={RightIcon} alt="RightIcon" />
                 </div>
                 <p>
                   Jetzt geht es ans Eingemachte. Wir stellen Dir leicht
@@ -109,12 +100,9 @@ export default function ClientSection() {
               <div className="text-center-alignment-all">
                 <h1>Lehrerberatung Step by Step</h1>
                 <div className="button-center-alignment">
-                  <img src={LeftIcon} alt="LeftIcon" />
-
                   <button onClick={() => setModalOpen(!modalOpen)}>
                     4. Zusammenarbeit
                   </button>
-                  <img src={RightIcon} alt="RightIcon" />
                 </div>
                 <p>
                   Und jetzt? Kannst Du Dich ganz entspannt zurücklehnen. Wir
