@@ -7,6 +7,7 @@ import Xmld from "../../../assets/icons/XMLID_1_.svg";
 import Icon1 from "../../../assets/icons/123.svg";
 import SecModal from "../../secModal";
 import ContactModal from "../../ContactModal";
+import ContactModalNew from "../../ContactModalNew";
 export default function Herobanner() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modal2Open, setModal2Open] = useState(false);
@@ -67,7 +68,7 @@ export default function Herobanner() {
         </div>
       </div>
       {modalOpen && (
-        <ContactModal
+        <ContactModalNew
           setModalOpen={setModalOpen}
           setModal2Open={setModal2Open}
         />

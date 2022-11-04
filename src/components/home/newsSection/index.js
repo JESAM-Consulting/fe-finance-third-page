@@ -19,7 +19,10 @@ export default function NewsSection() {
                 <img src={CardImage} alt="CardImage" />
               </div>
               <div className="card-details">
-                <h2>Der Airbag für Lehrer:innen – unser Webinar</h2>
+                <h2>
+                  {" "}
+                  Sorgenfrei ins Referendariat - unser Webinar für Lehrer:innen
+                </h2>
                 <p>
                   Jeder braucht einmal einen Schutzengel. Wie gut, dass man
                   vieles aber auch selbst in der Hand hat. Nimm’ an unserem

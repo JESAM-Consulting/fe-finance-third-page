@@ -21,6 +21,8 @@
         position: absolute;
         top: 122px;
         left: 36%;
+        z-index: 999999;
+
         cursor: pointer;
 
         @include breakpoint("max-sm") {
@@ -32,6 +34,7 @@
     .button-right-side-arrow-alignment-for-page {
         position: absolute;
         top: 122px;
+        z-index: 999999;
         right: 36%;
         cursor: pointer;
 

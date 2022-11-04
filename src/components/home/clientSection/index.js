@@ -5,32 +5,13 @@ import RightIcon from "../../../assets/icons/new-right.svg";
 import LeftIcon from "../../../assets/icons/new-left.svg";
 import ContactModal from "../../ContactModal";
 import SecModal from "../../secModal";
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      onClick={onClick}
-      className="button-right-side-arrow-alignment-for-page"
-    >
-      <img src={RightIcon} alt="RightIcon" />
-    </div>
-  );
-}
 
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      onClick={onClick}
-      className="button-left-side-arrow-alignment-for-page"
-    >
-      <img src={LeftIcon} alt="LeftIcon" />
-    </div>
-  );
-}
 export default function ClientSection() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modal2Open, setModal2Open] = useState(false);
+  const [slideIndexNext, setSlideIndexNext] = useState(0);
+  const [slideIndexPrew, setSlideIndexPrew] = useState(0);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -39,7 +20,42 @@ export default function ClientSection() {
     prevArrow: <SamplePrevArrow />,
     slidesToShow: 1,
     slidesToScroll: 1,
+    beforeChange: (oldIndex, newIndex) => {
+      console.log("oldIndex, newIndex", oldIndex, newIndex);
+      setSlideIndexNext(newIndex);
+      setSlideIndexPrew(oldIndex);
+    },
   };
+
+  console.log("slideIndexPrew");
+
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      slideIndexNext < 3 && (
+        <div
+          onClick={onClick}
+          className="button-right-side-arrow-alignment-for-page"
+        >
+          <img src={RightIcon} alt="RightIcon" />
+        </div>
+      )
+    );
+  }
+
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      slideIndexNext > 0 && (
+        <div
+          onClick={onClick}
+          className="button-left-side-arrow-alignment-for-page"
+        >
+          <img src={LeftIcon} alt="LeftIcon" />
+        </div>
+      )
+    );
+  }
   return (
     <div>
       <div className="client-section-all-content-banner">
