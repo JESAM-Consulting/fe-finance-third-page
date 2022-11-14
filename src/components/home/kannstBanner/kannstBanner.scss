@@ -1,12 +1,22 @@
 @import '../../../styles/mixins/global.scss';
 
 .kannst-banner-alignment {
-    background-image: url("../../../assets/images/new-banner.svg");
+    background-image: url("../../../assets/images/new-banner-one.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    background-position: center center;
     padding: 240px 0 111px 0;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .5);
+        content: "";
+    }
 
     @include breakpoint("max-md") {
         padding: 118px 0 61px 0;
@@ -24,6 +34,7 @@
         font-weight: 700;
         margin: 0 0 32px 0;
         font-size: 64px;
+        position: relative;
         line-height: 73px;
         text-align: center;
 
@@ -43,6 +54,7 @@
     .button-center-alignment {
         display: flex;
         align-items: center;
+        position: relative;
         justify-content: center;
 
         button {

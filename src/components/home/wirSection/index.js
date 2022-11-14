@@ -11,6 +11,7 @@ import Icon321 from "../../../assets/icons/Pfad 793 1.svg";
 import Slider from "react-slick";
 import ContactModal from "../../ContactModal";
 import SecModal from "../../secModal";
+import ContactModalNew from "../../ContactModalNew";
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -107,12 +108,40 @@ export default function WirSection() {
                   <img src={Icon2} alt="Icon2" />
                   <img src={Icon2} alt="Icon2" />
                   <img src={Icon2} alt="Icon2" />
-                  <img src={Icon32} alt="Icon32" />
+                  <img src={Icon2} alt="Icon2" />
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  ”Ardian ist wirklich ein super Berater für angehende Lehrer
+                  und Lehrerinnen! Er konnte mir bei meinen Fragen und Bedenken
+                  sehr gut helfen. Er nimmt sich zudem sehr viel Zeit und
+                  Erklärt alles anschaulich und verständlich. Alle Einzelheiten,
+                  Klauseln, Abkürzungen und das Kleingedruckte wurden geduldig
+                  besprochen. So konnten wir relativ schnell zu einer guten
+                  Lösung für mich kommen.”
+                </p>
+              </div>
+            </div>
+            <div>
+              <div className="slider-section-content">
+                <h2>Sehr freundliche Beratung</h2>
+                <div className="rating-alignment">
+                  <img src={Icon2} alt="Icon2" />
+                  <img src={Icon2} alt="Icon2" />
+                  <img src={Icon2} alt="Icon2" />
+                  <img src={Icon2} alt="Icon2" />
+                  <img src={Icon2} alt="Icon2" />
+                </div>
+                <p>
+                  “Danke für die Geduld und die super Beratung! Ardian hat sich
+                  sehr viel Zeit für mich genommen. Alles lief verständlich und
+                  Schritt für Schritt. Es gab keine "dummen" Fragen. Das fand
+                  ich toll, weil ich mit dem ganzen "Versicherungskram" echt ein
+                  wenig überfordert war. Er hat mir alle Klauseln und Abläufe
+                  sehr einfach erklärt sodass ich sie als Laie auch verstehen
+                  konnte. Wir konnten trotz einiger Vorerkrankungen die
+                  passenden Versicherungen für mich finden. Nachdem ich Horror
+                  Geschichten von Kommilitonen gehört hatte war ich wirklich
+                  sehr froh das alles so easy abgelaufen ist. Danke nochmal!”
                 </p>
               </div>
             </div>
@@ -127,9 +156,17 @@ export default function WirSection() {
                   <img src={Icon32} alt="Icon32" />
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  “Anfangs war ich erstmal skeptisch, weil man ja immer im
+                  denkt, dass Versicherungsverteter etwas verkaufen wollen.
+                  Dabei wusste ich garnicht das es da auch noch Unterschiede
+                  gibt. Ich bin durch das Webinar aufmerksam geworden und dachte
+                  mir: kann ja nichts schief gehen, wenn es kostenlos ist. Alles
+                  ist vollkommen unverbindlich und ich fühle mich bei Ardian
+                  immer top beraten. Es wird einem nichts aufgedrängt und neben
+                  der Berücksichtigung individueller Wünsche hat Ardian für mich
+                  das Preis-Leistungstechnisch beste Angebot gefunden.. egal ob
+                  Dienstunfähigkeit, Krankenversicherung, Haftpflicht. Ich kann
+                  ihn nur weiter empfehlen! “
                 </p>
               </div>
             </div>
@@ -141,12 +178,17 @@ export default function WirSection() {
                   <img src={Icon2} alt="Icon2" />
                   <img src={Icon2} alt="Icon2" />
                   <img src={Icon2} alt="Icon2" />
-                  <img src={Icon32} alt="Icon32" />
+                  <img src={Icon2} alt="Icon2" />
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  “Alles Top! Habe mir sehr viel Zeit und Stress erspart.
+                  Dadurch das Henning Versicherungsmakler ist und somit
+                  unabhängig ist habe ich mir sehr viel Zeit gespart mit
+                  Angeboten vergleichen. Er konnte mir sehr unkompliziert und
+                  schnell Angebote von verschiedenen Versicherungen einholen.
+                  Fast schon wie ein Vergleichsportal nur besser und
+                  persönlicher. So darf es in Zukunft gerne bleiben. Danke
+                  Kennet und bis bald!”
                 </p>
               </div>
             </div>
@@ -157,7 +199,7 @@ export default function WirSection() {
         </div>
       </div>
       {modalOpen && (
-        <ContactModal
+        <ContactModalNew
           setModalOpen={setModalOpen}
           setModal2Open={setModal2Open}
         />
