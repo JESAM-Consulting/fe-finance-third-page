@@ -6,6 +6,7 @@ import CardImage1 from "../../../assets/images/card1.jpg";
 import Icon from "../../../assets/icons/iconoir_nav-arrow-right.svg";
 import ContactModal from "../../ContactModal";
 import SecModal from "../../secModal";
+import ContactModalNew from "../../ContactModalNew";
 export default function NewsSection() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modal2Open, setModal2Open] = useState(false);
@@ -58,7 +59,7 @@ export default function NewsSection() {
         </div>
       </div>
       {modalOpen && (
-        <ContactModal
+        <ContactModalNew
           setModalOpen={setModalOpen}
           setModal2Open={setModal2Open}
         />

@@ -7,6 +7,7 @@ import Icon4 from "../../../assets/icons/Icon Pension.svg";
 import Icon5 from "../../../assets/icons/chat.svg";
 import ContactModal from "../../ContactModal";
 import SecModal from "../../secModal";
+import ContactModalNew from "../../ContactModalNew";
 export default function UnserSection() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modal2Open, setModal2Open] = useState(false);
@@ -103,7 +104,7 @@ export default function UnserSection() {
         </div>
       </div>
       {modalOpen && (
-        <ContactModal
+        <ContactModalNew
           setModalOpen={setModalOpen}
           setModal2Open={setModal2Open}
         />

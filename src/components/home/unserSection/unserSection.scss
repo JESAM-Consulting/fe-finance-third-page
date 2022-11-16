@@ -86,8 +86,12 @@
         }
 
         @include breakpoint("max-sm") {
-            padding: 0 0 35px 0;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            padding: 0 60px 35px 60px;
         }
+
+
 
         .grid-items {
             background: #FFFFFF;
@@ -101,7 +105,7 @@
             cursor: pointer;
 
             @include breakpoint("max-sm") {
-                padding: 33px 18px;
+                padding: 50px 18px;
                 border-radius: 10px 10px 30px 10px;
             }
 
@@ -165,8 +169,8 @@
                         max-width: 230px;
 
                         @include breakpoint("max-sm") {
-                            font-size: 7px;
-                            line-height: 12px;
+                            font-size: 9px;
+                            line-height: 16px;
                             max-width: 100%;
                         }
                     }

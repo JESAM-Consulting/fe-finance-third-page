@@ -3,6 +3,7 @@ import "./kannstBanner.scss";
 import Icon1 from "../../../assets/icons/icon.svg";
 import ContactModal from "../../ContactModal";
 import SecModal from "../../secModal";
+import ContactModalNew from "../../ContactModalNew";
 export default function KannstBanner() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modal2Open, setModal2Open] = useState(false);
@@ -22,7 +23,7 @@ export default function KannstBanner() {
         </div>
       </div>
       {modalOpen && (
-        <ContactModal
+        <ContactModalNew
           setModalOpen={setModalOpen}
           setModal2Open={setModal2Open}
         />

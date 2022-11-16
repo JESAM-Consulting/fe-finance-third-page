@@ -6,6 +6,7 @@ import Icon11 from "../../../assets/icons/contact.svg";
 import Group262 from "../../../assets/icons/Group 262.svg";
 import ContactModal from "../../ContactModal";
 import SecModal from "../../secModal";
+import ContactModalNew from "../../ContactModalNew";
 export default function Footer() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modal2Open, setModal2Open] = useState(false);
@@ -57,7 +58,7 @@ export default function Footer() {
         </div>
       </div>
       {modalOpen && (
-        <ContactModal
+        <ContactModalNew
           setModalOpen={setModalOpen}
           setModal2Open={setModal2Open}
         />
