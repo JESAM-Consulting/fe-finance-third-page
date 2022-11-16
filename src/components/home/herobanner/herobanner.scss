@@ -17,7 +17,7 @@
     }
 
     @include breakpoint("max-sm") {
-        background-image: url("../../../assets/images/mobile-banner.png");
+        background-image: url("../../../assets/images/mobile-banner.svg");
         background-position: inherit;
         height: 347px;
     }

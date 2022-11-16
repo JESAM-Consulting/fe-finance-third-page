@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 import "./newsSection.scss";
-import CardImage from "../../../assets/images/card.svg";
-import CardImage1 from "../../../assets/images/card1.svg";
+import CardImage from "../../../assets/images/card.jpg";
+import CardImage1 from "../../../assets/images/card1.jpg";
 import Icon from "../../../assets/icons/iconoir_nav-arrow-right.svg";
 import ContactModal from "../../ContactModal";
 import SecModal from "../../secModal";
