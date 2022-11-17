@@ -45,8 +45,15 @@ export default function Footer() {
             <div className="menu-alignment">
               <div className="menyu">
                 <a>FAQ</a>
-                <a>Datenschutz</a>
-                <a>Impressum</a>
+                <a
+                  href="https://www.fe-finance.de/datenschutzerklarung"
+                  target="_blank"
+                >
+                  Datenschutz
+                </a>
+                <a href="https://www.fe-finance.de/impressum" target="_blank">
+                  Impressum
+                </a>
               </div>
               <div>
                 <a href="#home">

@@ -105,7 +105,7 @@
             cursor: pointer;
 
             @include breakpoint("max-sm") {
-                padding: 50px 18px;
+                padding: 80px 18px;
                 border-radius: 10px 10px 30px 10px;
             }
 
@@ -169,8 +169,8 @@
                         max-width: 230px;
 
                         @include breakpoint("max-sm") {
-                            font-size: 9px;
-                            line-height: 16px;
+                            font-size: 12px;
+                            line-height: 22px;
                             max-width: 100%;
                         }
                     }
@@ -208,8 +208,8 @@
 
                 @include breakpoint("max-sm") {
                     font-weight: 700;
-                    font-size: 11px;
-                    line-height: 13px;
+                    font-size: 17px;
+                    line-height: 22px;
                     margin: 10px 0 0 0;
                 }
             }
