@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./footer.scss";
+import { NavLink } from "react-router-dom";
 import MailIcon from "../../../assets/icons/noun_Mail_2181226 1.svg";
 import Icon1 from "../../../assets/icons/Vector (2).svg";
 import Icon11 from "../../../assets/icons/contact.svg";
@@ -45,15 +46,8 @@ export default function Footer() {
             <div className="menu-alignment">
               <div className="menyu">
                 <a>FAQ</a>
-                <a
-                  href="https://www.fe-finance.de/datenschutzerklarung"
-                  target="_blank"
-                >
-                  Datenschutz
-                </a>
-                <a href="https://www.fe-finance.de/impressum" target="_blank">
-                  Impressum
-                </a>
+                <NavLink to="/datenschutz"> Datenschutz</NavLink>
+                <NavLink to="/impressum">Impressum</NavLink>
               </div>
               <div>
                 <a href="#home">
