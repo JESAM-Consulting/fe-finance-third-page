@@ -65,7 +65,7 @@ export default function ClientSection() {
               <div className="text-center-alignment-all">
                 <h1>Lehrerberatung Step by Step</h1>
                 <div className="button-center-alignment">
-                  <button onClick={() => setModalOpen(!modalOpen)}>
+                  <button>
                     1. Termin
                   </button>
                 </div>
@@ -82,7 +82,7 @@ export default function ClientSection() {
               <div className="text-center-alignment-all">
                 <h1>Lehrerberatung Step by Step</h1>
                 <div className="button-center-alignment">
-                  <button onClick={() => setModalOpen(!modalOpen)}>
+                  <button>
                     2. Konzept
                   </button>
                 </div>
@@ -99,7 +99,7 @@ export default function ClientSection() {
               <div className="text-center-alignment-all">
                 <h1>Lehrerberatung Step by Step</h1>
                 <div className="button-center-alignment">
-                  <button onClick={() => setModalOpen(!modalOpen)}>
+                  <button>
                     3. Beratung
                   </button>
                 </div>
@@ -116,7 +116,7 @@ export default function ClientSection() {
               <div className="text-center-alignment-all">
                 <h1>Lehrerberatung Step by Step</h1>
                 <div className="button-center-alignment">
-                  <button onClick={() => setModalOpen(!modalOpen)}>
+                  <button>
                     4. Zusammenarbeit
                   </button>
                 </div>
