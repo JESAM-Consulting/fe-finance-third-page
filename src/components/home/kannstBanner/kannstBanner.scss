@@ -1,7 +1,7 @@
 @import '../../../styles/mixins/global.scss';
 
 .kannst-banner-alignment {
-    background-image: url("../../../assets/images/new12.svg");
+    background-image: url("../../../assets/images/new-banner-one.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -23,8 +23,8 @@
     }
 
     @include breakpoint("max-sm") {
-        background-image: url("../../../assets/images/m-new.png");
-
+        // background-image: url("../../../assets/images/m-new.png");
+        background-position: center;
         padding: 219px 0 50px 0;
     }
 
