@@ -5,6 +5,7 @@ import LayoutBanner from "../../../assets/images/layout.png";
 import ChatIcon from "../../../assets/icons/chat.svg";
 import ContactModal from "../../ContactModal";
 import SecModal from "../../secModal";
+import ContactModalNew from "../../ContactModalNew";
 export default function WeilSection() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modal2Open, setModal2Open] = useState(false);
@@ -49,7 +50,7 @@ export default function WeilSection() {
         </div>
       </div>
       {modalOpen && (
-        <ContactModal
+        <ContactModalNew
           setModalOpen={setModalOpen}
           setModal2Open={setModal2Open}
         />

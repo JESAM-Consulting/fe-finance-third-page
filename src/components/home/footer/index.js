@@ -41,7 +41,9 @@ export default function Footer() {
         <div className="container-lg-2">
           <div className="content-alignment">
             <div>
-              <h2>FE Finance GmbH</h2>
+              <h2>
+                Copyright © 2022 JESAM Consulting GmbH. Alle Rechte vorbehalten.
+              </h2>
             </div>
             <div className="menu-alignment">
               <div className="menyu">
