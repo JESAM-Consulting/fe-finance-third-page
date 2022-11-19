@@ -36,3 +36,7 @@ input:focus{
 button:focus{
   outline: none;
 }
+
+.calendly-inline-widget {
+  height: 100vh !important;
+}

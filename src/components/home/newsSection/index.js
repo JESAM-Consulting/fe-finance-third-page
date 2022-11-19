@@ -6,10 +6,13 @@ import CardImage1 from "../../../assets/images/card1.jpg";
 import Icon from "../../../assets/icons/iconoir_nav-arrow-right.svg";
 import ContactModal from "../../ContactModal";
 import SecModal from "../../secModal";
+import { NavLink } from "react-router-dom";
 import ContactModalNew from "../../ContactModalNew";
+import { InlineWidget } from "react-calendly";
 export default function NewsSection() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modal2Open, setModal2Open] = useState(false);
+  const [newModalOpen, setNewModalOpen] = useState(false);
   return (
     <div>
       <div className="news-section-all-content-alignment">
@@ -31,10 +34,13 @@ export default function NewsSection() {
                   Lehrer:innen teil – und stelle jetzt die Weichen für eine
                   sorgenfreie Zukunft.
                 </p>
-                <button onClick={() => setModalOpen(!modalOpen)}>
-                  <img src={Icon} alt="Icon" />
-                  <span>WEBINAR ANMELDUNG</span>
-                </button>
+                {/* <button onClick={() => setModalOpen(!modalOpen)}> */}
+                <NavLink to="/fe-finance-calendly">
+                  <button>
+                    <img src={Icon} alt="Icon" />
+                    <span>WEBINAR ANMELDUNG</span>
+                  </button>
+                </NavLink>
               </div>
             </div>
             <div className="box">
@@ -65,6 +71,11 @@ export default function NewsSection() {
         />
       )}
       {modal2Open && <SecModal setModal2Open={setModal2Open} />}
+      {/* {newModalOpen && (
+        <div className="App">
+          <InlineWidget url="https://calendly.com/fefinance" />
+        </div>
+      )} */}
     </div>
   );
 }

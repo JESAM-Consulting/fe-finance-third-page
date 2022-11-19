@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./styles/mixins/global.scss";
 import Impressum from "./components/impressum";
 import Datenschutz from "./components/datenschutz";
+import FeFinanceCalendly from "./components/feFinanceCalendly";
 function App() {
   return (
     <>
@@ -15,6 +16,12 @@ function App() {
             exact={true}
             path="/"
             component={Home}
+            layout={DefaultLayout}
+          />
+          <RouteWrapper
+            exact={true}
+            path="/fe-finance-calendly"
+            component={FeFinanceCalendly}
             layout={DefaultLayout}
           />
           <RouteWrapper
