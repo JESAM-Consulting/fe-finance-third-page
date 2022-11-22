@@ -5,7 +5,7 @@ export default function FeFinanceCalendly() {
   return (
     <div>
       <div className="App">
-        <InlineWidget url="https://calendly.com/fefinance" />
+        <InlineWidget url="https://calendly.com/fefinance/ver-un-sichert-in-referendariat-das-zukunftsseminar-fur-angehende-lehrkrafte" />
       </div>
     </div>
   );
