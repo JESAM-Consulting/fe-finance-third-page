@@ -102,7 +102,7 @@ export default function WirSection() {
           <Slider {...settings}>
             <div>
               <div className="slider-section-content">
-                <h2>Sehr freundliche Beratung</h2>
+                <h2>Marieke</h2>
                 <div className="rating-alignment">
                   <img src={Icon2} alt="Icon2" />
                   <img src={Icon2} alt="Icon2" />
@@ -123,7 +123,7 @@ export default function WirSection() {
             </div>
             <div>
               <div className="slider-section-content">
-                <h2>Sehr freundliche Beratung</h2>
+                <h2>Sofia</h2>
                 <div className="rating-alignment">
                   <img src={Icon2} alt="Icon2" />
                   <img src={Icon2} alt="Icon2" />
@@ -147,7 +147,7 @@ export default function WirSection() {
             </div>
             <div>
               <div className="slider-section-content">
-                <h2>Sehr freundliche Beratung</h2>
+                <h2>Lennard</h2>
                 <div className="rating-alignment">
                   <img src={Icon2} alt="Icon2" />
                   <img src={Icon2} alt="Icon2" />
@@ -172,7 +172,7 @@ export default function WirSection() {
             </div>
             <div>
               <div className="slider-section-content">
-                <h2>Sehr freundliche Beratung</h2>
+                <h2>Selim</h2>
                 <div className="rating-alignment">
                   <img src={Icon2} alt="Icon2" />
                   <img src={Icon2} alt="Icon2" />
@@ -182,7 +182,7 @@ export default function WirSection() {
                 </div>
                 <p>
                   “Alles Top! Habe mir sehr viel Zeit und Stress erspart.
-                  Dadurch das Henning Versicherungsmakler ist und somit
+                  Dadurch das Kennet Versicherungsmakler ist und somit
                   unabhängig ist habe ich mir sehr viel Zeit gespart mit
                   Angeboten vergleichen. Er konnte mir sehr unkompliziert und
                   schnell Angebote von verschiedenen Versicherungen einholen.
