@@ -78,9 +78,24 @@ export default function WirSection() {
             <div className="two-image-center-alignment">
               <div className="card">
                 <img src={Men} alt="Men" />
+
+                <div className="card-details-new">
+                  <p>Kennet Kostmann</p>
+                  <a href="mailto:k.kostmann@fe-finance.de">
+                    k.kostmann@fe-finance.de
+                  </a>
+                  <a href="tel:+49 157 31637040">+49 157 31637040</a>
+                </div>
               </div>
               <div className="card">
                 <img src={Men1} alt="Men1" />
+                <div className="card-details-new">
+                  <p>Ardian Gjeka</p>
+                  <a href="mailto:a.gjeka@fe-finance.de">
+                    a.gjeka@fe-finance.de
+                  </a>
+                  <a href="tel:+49 151 40566848">+49 151 40566848</a>
+                </div>
               </div>
             </div>
           </div>

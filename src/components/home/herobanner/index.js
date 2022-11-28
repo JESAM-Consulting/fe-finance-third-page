@@ -16,10 +16,7 @@ export default function Herobanner() {
       <div className="home-page-hero-banner" id="home">
         <div className="container-lg">
           <div className="hero-header-alignment">
-            <div className="icon-text-alignment">
-              <img src={DownIcon} alt="DownIcon" />
-              <span>zur FE Finance Website </span>
-            </div>
+          
             <div>
               <img src={FEConstruction} alt="FEConstruction" />
             </div>
