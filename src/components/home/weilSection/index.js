@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./weilSection.scss";
 import HeaderBanner from "../../../assets/images/header-banner.svg";
+import HeaderBannerM from "../../../assets/images/new000.png";
 import LayoutBanner from "../../../assets/images/layout.png";
 import ChatIcon from "../../../assets/icons/chat.svg";
 import ContactModal from "../../ContactModal";
@@ -33,6 +34,7 @@ export default function WeilSection() {
         <div className="container-md-2">
           <div className="header-banner-content-alignment">
             <img src={HeaderBanner} alt="HeaderBanner" />
+            <img src={HeaderBannerM} alt="HeaderBannerM" />
           </div>
         </div>
         <div className="main-layout-banner">
