@@ -23,10 +23,13 @@ export default function WeilSection() {
               fordernden Referendariat stellen. In dieser Zeit ist Lernen
               oberstes Gebot. Zukunft- und Versicherungsfragen treten in den
               Hintergrund. Dabei brauchst Du als Studierende:r oder
-              Referendar:in <b>GENAU JETZT</b> eine individuelle Beratung. Eine
-              Beratung durch ein empathisches Expertenteam, das sich auf die
-              Absicherung von angehenden oder frischgebackenen Lehrer:innen
-              spezialisiert hat.
+              Referendar:in
+              <br /> <b onClick={() => setModalOpen(!modalOpen)}>
+                GENAU JETZT
+              </b>{" "}
+              eine individuelle Beratung. Eine Beratung durch ein empathisches
+              Expertenteam, das sich auf die Absicherung von angehenden oder
+              frischgebackenen Lehrer:innen spezialisiert hat.
             </p>
             <h6>Kurz gesagt: Du brauchst uns – den Financial Guide.</h6>
             <div className="sec-section-button-alignment">
