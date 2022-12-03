@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ContactModal from "../ContactModal";
 import "../home/home.scss";
 import ClientSection from "./clientSection";

@@ -45,7 +45,7 @@
                     font-size: 20px;
                     margin: 0 0 0px 0;
                     line-height: 27px;
-                    font-family: "Branding-bold";
+                    font-family: "VisbyBold";
                     color: #010102;
 
                     @include breakpoint("max-sm") {
@@ -57,7 +57,7 @@
                     font-weight: 500;
                     font-size: 14px;
                     color: #010102;
-                    font-family: "Branding-Medium";
+                    font-family: "VisbyCF-Medium";
                     line-height: 22px;
                     display: block;
 
@@ -108,7 +108,7 @@
             font-weight: 700;
             font-size: 60px;
             line-height: 69px;
-            font-family: "Branding-bold";
+            font-family: "VisbyBold";
             text-align: center;
             color: #FCFEFF;
             margin: 0 0 78px 0;
@@ -234,12 +234,10 @@
             /* or 130% */
 
             text-align: center;
-            font-family: "Branding-Medium";
-
+            font-family: "VisbyCF-Medium";
             max-width: 733px;
-
             color: #484848;
-            margin: 0 auto 60px auto;
+            margin: 0 auto 40px auto;
 
             @include breakpoint("max-md") {
                 font-weight: 500;
@@ -252,6 +250,7 @@
 
             @include breakpoint("max-sm") {
                 max-width: 295px;
+                margin: 0 auto 0 auto;
             }
         }
 
@@ -261,7 +260,7 @@
             margin: 0 0 30px 0;
             line-height: 27px;
             text-align: center;
-            font-family: "Branding-bold";
+            font-family: "VisbyBold";
             color: #010102;
 
 

@@ -30,7 +30,7 @@
             font-weight: 700;
             font-size: 60px;
             color: #010102;
-            font-family: "Branding-bold";
+            font-family: "VisbyBold";
             line-height: 69px;
             margin: 0 0 23px 0;
 
@@ -53,7 +53,7 @@
         h6 {
             font-size: 20px;
             color: #484848;
-            font-family: "Branding-bold";
+            font-family: "VisbyBold";
             font-weight: 700;
             line-height: 26px;
 
@@ -86,7 +86,7 @@
             }
 
             b {
-                font-family: "Branding-bold";
+                font-family: "VisbyBold";
 
                 font-weight: 700;
             }
@@ -200,6 +200,54 @@
                 display: block;
                 padding-left: 5px;
             }
+
+        }
+    }
+}
+
+.sec-section-button-alignment {
+    padding: 40px 0 0 0;
+    display: flex;
+    justify-content: center;
+
+    button {
+        padding: 11px 20px;
+        background-color: transparent;
+        border-radius: 6px 6px 16px 6px;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 15px;
+        font-family: 'Inter', sans-serif;
+        color: #9dbc78;
+        border: 1px solid #9dbc78;
+        text-align: left;
+        line-height: 18px;
+        transition: .3s ease-in-out;
+
+        svg {
+            path {
+                stroke: #9dbc78;
+
+            }
+        }
+
+
+
+        @include breakpoint("max-md") {
+            font-weight: 600;
+            font-size: 11px;
+            padding: 11px 29px;
+            line-height: 13px;
+        }
+
+
+
+        span {
+            display: block;
+            padding-right: 5px;
+            font-family: 'Inter', sans-serif;
 
         }
     }

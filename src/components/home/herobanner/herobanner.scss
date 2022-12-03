@@ -19,7 +19,8 @@
     @include breakpoint("max-sm") {
         background-image: url("../../../assets/images/mobile-banner.png");
         background-position: inherit;
-        height: 347px;
+        height: 364px;
+
     }
 
     .content-bottom-alignment {
@@ -72,6 +73,20 @@
                     color: #fff;
                     text-align: left;
                     line-height: 18px;
+                    transition: .3s ease-in-out;
+
+                    &:hover {
+                        color: #9dbc78;
+                        border: 1px solid #9dbc78;
+                        transition: .3s ease-in-out;
+
+                        svg {
+                            path {
+                                stroke: #9dbc78;
+
+                            }
+                        }
+                    }
 
                     @include breakpoint("max-md") {
                         font-weight: 600;
@@ -98,7 +113,7 @@
                 font-weight: 700;
                 max-width: 702px;
                 font-size: 60px;
-                font-family: "VisbyCF-Medium";
+                font-family: "VisbyExtrabold";
                 margin: 0 0 20px 0;
                 line-height: 69px;
 
@@ -114,7 +129,7 @@
                     font-size: 20px;
                     max-width: 271px;
                     text-align: right;
-                    line-height: 23px;
+                    line-height: 30px;
                     margin: 70px 0 0 0;
                 }
             }
@@ -123,7 +138,7 @@
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 27px;
-                font-family: "Branding-bold";
+                font-family: "VisbyBold";
                 color: #9DBC78;
                 margin: 0 0 26px 0;
 
@@ -146,7 +161,7 @@
         display: flex;
         align-items: center;
         padding: 40px 0;
-        justify-content: flex-end;
+        justify-content: space-between;
 
         @include breakpoint("max-md") {
             padding: 30px 0;
@@ -154,6 +169,25 @@
 
         @include breakpoint("max-sm") {
             padding: 18px 0;
+        }
+
+        button {
+            background: #FFFFFF;
+            padding: 16px 25px;
+            color: #000000;
+            border: none;
+            cursor: pointer;
+            font-family: "VisbyBold";
+
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+
+            @include breakpoint("max-sm") {
+                padding: 10px;
+                font-size: 12px;
+                line-height: 16px;
+            }
         }
 
         div {
@@ -235,7 +269,7 @@
         font-weight: 700;
         font-size: 11px;
         color: #9DBC78;
-        font-family: "Branding-bold";
+        font-family: "VisbyBold";
 
         max-width: 247px;
         line-height: 13px;

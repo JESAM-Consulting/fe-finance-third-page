@@ -30,12 +30,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div
-          className="contact-icon-alignment"
-          onClick={() => setModalOpen(!modalOpen)}
-        >
-          <img src={Icon11} alt="Icon11" />
-        </div>
       </div>
       <div className="sub-footer-content-alignment">
         <div className="container-lg-2">
@@ -47,7 +41,6 @@ export default function Footer() {
             </div>
             <div className="menu-alignment">
               <div className="menyu">
-                <a>FAQ</a>
                 <NavLink to="/datenschutz"> Datenschutz</NavLink>
                 <NavLink to="/impressum">Impressum</NavLink>
               </div>

@@ -51,7 +51,7 @@
             font-weight: 700;
             font-size: 60px;
             line-height: 69px;
-            font-family: "Branding-bold";
+            font-family: "VisbyBold";
             text-align: center;
             color: #FFFFFF;
             margin: 0 0 30px 0;
@@ -75,14 +75,14 @@
             line-height: 26px;
 
             text-align: center;
-            font-family: "Branding-Medium";
+            font-family: "VisbyCF-Medium";
             max-width: 733px;
             margin: 0 auto 30px auto;
             color: #FFFFFF;
 
             @include breakpoint("max-md") {
                 font-weight: 500;
-                font-size: 11px;
+                font-size: 14px;
                 max-width: 539px;
                 margin: 0 auto 20px auto;
 
@@ -91,6 +91,8 @@
 
             @include breakpoint("max-sm") {
                 max-width: 306px;
+                font-size: 14px;
+                line-height: 24px;
             }
         }
 

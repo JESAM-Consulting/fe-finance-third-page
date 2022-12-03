@@ -5,6 +5,7 @@ import RightIcon from "../../../assets/icons/new-right.svg";
 import LeftIcon from "../../../assets/icons/new-left.svg";
 import ContactModal from "../../ContactModal";
 import SecModal from "../../secModal";
+import ContactModalNew from "../../ContactModalNew";
 
 export default function ClientSection() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -65,7 +66,7 @@ export default function ClientSection() {
               <div className="text-center-alignment-all">
                 <h1>Lehrerberatung Step by Step</h1>
                 <div className="button-center-alignment">
-                  <button>
+                  <button onClick={() => setModalOpen(!modalOpen)}>
                     1. Termin
                   </button>
                 </div>
@@ -82,7 +83,7 @@ export default function ClientSection() {
               <div className="text-center-alignment-all">
                 <h1>Lehrerberatung Step by Step</h1>
                 <div className="button-center-alignment">
-                  <button>
+                  <button onClick={() => setModalOpen(!modalOpen)}>
                     2. Konzept
                   </button>
                 </div>
@@ -99,7 +100,7 @@ export default function ClientSection() {
               <div className="text-center-alignment-all">
                 <h1>Lehrerberatung Step by Step</h1>
                 <div className="button-center-alignment">
-                  <button>
+                  <button onClick={() => setModalOpen(!modalOpen)}>
                     3. Beratung
                   </button>
                 </div>
@@ -116,7 +117,7 @@ export default function ClientSection() {
               <div className="text-center-alignment-all">
                 <h1>Lehrerberatung Step by Step</h1>
                 <div className="button-center-alignment">
-                  <button>
+                  <button onClick={() => setModalOpen(!modalOpen)}>
                     4. Zusammenarbeit
                   </button>
                 </div>
@@ -134,7 +135,7 @@ export default function ClientSection() {
         </div>
       </div>
       {modalOpen && (
-        <ContactModal
+        <ContactModalNew
           setModalOpen={setModalOpen}
           setModal2Open={setModal2Open}
         />

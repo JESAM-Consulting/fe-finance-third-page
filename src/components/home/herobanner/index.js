@@ -16,7 +16,12 @@ export default function Herobanner() {
       <div className="home-page-hero-banner" id="home">
         <div className="container-lg">
           <div className="hero-header-alignment">
-          
+            <div>
+              <button onClick={() => setModalOpen(!modalOpen)}>
+                Jetzt für ein kostenfreies <br />
+                Beratungsgepräch anmelden
+              </button>
+            </div>
             <div>
               <img src={FEConstruction} alt="FEConstruction" />
             </div>
@@ -35,7 +40,21 @@ export default function Herobanner() {
                   Jetzt für ein kostenfreies Beratungsgepräch <br />
                   in wenigen Sekunden anmelden
                 </span>
-                <img src={RightIcon} alt="RightIcon" />
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 18.5L15 12.5L9 6.5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </button>
             </div>
           </div>
